@@ -254,7 +254,12 @@ if (field.isAnnotationPresent(Column.class)) { // 判断是否有该注解
 	- annotationProcessor既支持javac同时也支持jack(jdk8)编译。
 - 最终编译出来的apk，不包含注解处理器的代码
 
-![](imgs/1.jpg)
+项目结构：<img src="imgs/1.jpg" width=150/>
+
+- annotation：声明所使用的自定义注解
+- api：注解框架的具体实现
+- compiler：注解处理器，在编译期间通过反射处理注解，并生成代码
+- app：用于测试注解框架的demo
 
 **Element 元素：**
 
